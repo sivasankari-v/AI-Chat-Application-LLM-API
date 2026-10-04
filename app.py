@@ -13,7 +13,7 @@ with st.sidebar:
 
     api_key = st.text_input("Groq API Key (Free)", type="password", help="Get free key from console.groq.com")
 
-    model = st.selectbox("Select Model", ["llama-3.1-8b-instant", "llama-3.3-70b-versatile", "mixtral-8x7b-32768"])
+    model = st.selectbox("Select Model", ["openai/gpt-oss-20b", "openai/gpt-oss-120b", "qwen/qwen3-32b", "llama-3.1-8b-instant"])
 
     temperature = st.slider("Temperature (Creativity)", 0.0, 2.0, 0.7)
     max_tokens = st.slider("Max Tokens (Cost Control)", 100, 4000, 1024)
